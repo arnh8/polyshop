@@ -1,0 +1,8 @@
+[
+    { "shape": "triangle", "id": 0, "color": "green", "price": 3 },
+    { "shape": "square", "id": 1, "color": "blue", "price": 4 },
+    { "shape": "pentagon", "id": 2, "color": "orange", "price": 5 },
+    { "shape": "hexagon", "id": 3, "color": "red", "price": 6 },
+    { "shape": "heptagon", "id": 4, "color": "yellow", "price": 7 },
+    { "shape": "octagon", "id": 5, "color": "purple", "price": 8 }
+]

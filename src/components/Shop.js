@@ -1,3 +1,36 @@
+import React, { useState, useEffect } from "react";
+import ShopItem from "./ShopItem";
+
 export default function Shop() {
-    return <div>List polygons here</div>;
+    const [polygons, setPolygons] = useState([]);
+
+    const getData = () => {
+        fetch("./polygons.json", {
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+        })
+            .then(function (response) {
+                //console.log(response);
+                return response.json();
+            })
+            .then(function (myJson) {
+                //console.log(myJson);
+                setPolygons(myJson);
+            });
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
+
+    return (
+        <div>
+            List polygons here{" "}
+            {polygons.map((polygon) => (
+                <ShopItem polygon={polygon} key={polygon.id} />
+            ))}
+        </div>
+    );
 }
