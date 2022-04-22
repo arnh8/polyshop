@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(236, 236, 236);
 
     height: 100px;
 
@@ -24,7 +24,7 @@
 }
 
 div.navBar a {
-    color: green;
+    color: black;
     text-decoration: none;
 }
 
@@ -51,4 +51,44 @@ h3 {
 
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.shopItem {
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    color: rgb(32, 32, 32);
+
+    box-shadow: 0px 4px 14px 0px rgb(88, 88, 88);
+
+    width: 240px;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.itemImg {
+    padding: 30px;
+    padding-top: 30px;
+}
+
+.itemName {
+    font-weight: bold;
+}
+.quantityHandler {
+    display: flex;
+    flex-direction: row;
 }

@@ -1,8 +1,8 @@
 [
-    { "shape": "triangle", "id": 0, "color": "green", "price": 3 },
-    { "shape": "square", "id": 1, "color": "blue", "price": 4 },
-    { "shape": "pentagon", "id": 2, "color": "orange", "price": 5 },
-    { "shape": "hexagon", "id": 3, "color": "red", "price": 6 },
-    { "shape": "heptagon", "id": 4, "color": "yellow", "price": 7 },
-    { "shape": "octagon", "id": 5, "color": "purple", "price": 8 }
+    { "shape": "triangle", "id": 0, "color": "#a1ff9c", "price": 3 },
+    { "shape": "square", "id": 1, "color": "#9cf0ff", "price": 4 },
+    { "shape": "pentagon", "id": 2, "color": "#ffd29c", "price": 5 },
+    { "shape": "hexagon", "id": 3, "color": "#ffa39c", "price": 6 },
+    { "shape": "heptagon", "id": 4, "color": "#fcff9c", "price": 7 },
+    { "shape": "octagon", "id": 5, "color": "#cf9cff", "price": 8 }
 ]

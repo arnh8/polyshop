@@ -26,8 +26,7 @@ export default function Shop() {
     }, []);
 
     return (
-        <div>
-            List polygons here{" "}
+        <div className="shop">
             {polygons.map((polygon) => (
                 <ShopItem polygon={polygon} key={polygon.id} />
             ))}
