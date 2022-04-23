@@ -11,9 +11,26 @@ function App() {
     const [cart, setCart] = useState([]); //a cart is an array of objects: {itemID, quantity, price?}
 
     function addToCart(id, quantity, price) {
+        if (quantity === 0) {
+            return;
+        }
         const oldCart = cart;
-        oldCart.push({ id, quantity, price });
+        let found = false;
+        //if id is already in cart, just increase its quantity
+        oldCart.find((x) => {
+            if (x.id === id) {
+                x.quantity = x.quantity + quantity;
+                found = true;
+                return true;
+            }
+            return false;
+        });
+
+        if (!found) {
+            oldCart.push({ id, quantity, price });
+        }
         setCart(oldCart);
+        console.log(cart);
     }
 
     return (
@@ -24,8 +41,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route
                         path="/shop"
-                        element={<Shop />}
-                        addToCart={addToCart}
+                        element={<Shop addToCart={addToCart} />}
                     />
                     <Route path="/cart" element={<Cart />} />
                 </Routes>

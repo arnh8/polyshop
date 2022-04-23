@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ShopItem from "./ShopItem";
 
-export default function Shop() {
+export default function Shop(props) {
     const [polygons, setPolygons] = useState([]);
 
     const getData = () => {
@@ -28,7 +28,11 @@ export default function Shop() {
     return (
         <div className="shop">
             {polygons.map((polygon) => (
-                <ShopItem polygon={polygon} key={polygon.id} />
+                <ShopItem
+                    polygon={polygon}
+                    key={polygon.id}
+                    addToCart={props.addToCart}
+                />
             ))}
         </div>
     );
