@@ -8,13 +8,13 @@ import Shop from "./Shop";
 import Cart from "./Cart";
 
 function App() {
-    const [cart, setCart] = useState([]); //a cart is an array of objects: {itemID, quantity, price?}
+    const [cart, setCart] = useState([{ id: 0, quantity: 1, price: 3 }]); //a cart is an array of objects: {itemID, quantity, price?}
 
     function addToCart(id, quantity, price) {
         if (quantity === 0) {
             return;
         }
-        const oldCart = cart;
+        let oldCart = [...cart];
         let found = false;
         //if id is already in cart, just increase its quantity
         oldCart.find((x) => {
@@ -36,7 +36,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <NavBar />
+                <NavBar cart={cart} />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route
