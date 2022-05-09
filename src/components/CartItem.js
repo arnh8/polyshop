@@ -33,6 +33,10 @@ function switchImg(shape) {
 }
 
 export default function CartItem(props) {
+    function removeFromCartHandler() {
+        props.removeFromCart(props.id);
+    }
+
     return (
         <div className="cartItem">
             <img className="itemImg" src={switchImg(props.shape)} />
@@ -40,7 +44,9 @@ export default function CartItem(props) {
                 <div className="itemName">{props.shape}</div>
                 <div className="itemQuant">Quantity: {props.quantity}</div>
             </div>
-            <button className="cartRemove">Remove</button>
+            <button className="cartRemove" onClick={removeFromCartHandler}>
+                Remove
+            </button>
         </div>
     );
 }

@@ -34,7 +34,13 @@ function App() {
         console.log(cart);
     }
 
-    function removeFromCart(index) {}
+    function removeFromCart(id) {
+        //find id in cart, and remove it
+        let oldCart = cart.filter(function (item) {
+            return item.id != id;
+        });
+        setCart(oldCart);
+    }
 
     return (
         <BrowserRouter>

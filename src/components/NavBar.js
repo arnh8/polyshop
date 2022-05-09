@@ -9,8 +9,9 @@ export default function NavBar(props) {
         let tempcount = 0;
         for (let i = 0; i < props.cart.length; i++) {
             const element = props.cart[i].quantity;
-            tempcount += props.cart[i].quantity;
+            tempcount += parseInt(props.cart[i].quantity);
         }
+        console.log("wthettehah " + tempcount);
         setCount(tempcount);
     }
 

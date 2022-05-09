@@ -35,7 +35,7 @@ export default function Cart(props) {
                           index={index}
                           id={item.id}
                           quantity={item.quantity}
-                          removeFromCart={props.addToCart}
+                          removeFromCart={props.removeFromCart}
                           shape={polygons[item.id].shape}
                       />
                   ))

@@ -58,7 +58,11 @@ export default function ShopItem(props) {
     }
 
     function addCartHandler(e) {
-        props.addToCart(props.polygon.id, quantity, props.polygon.price);
+        props.addToCart(
+            props.polygon.id,
+            parseInt(quantity),
+            props.polygon.price
+        );
         setQuantity(0);
         toggleBuy();
     }
