@@ -74,18 +74,29 @@ export default function ShopItem(props) {
             <div>${props.polygon.price}</div>
             {buying ? (
                 <div className="quantityHandler">
-                    <button onClick={toggleBuy}>x</button>
-                    <button onClick={decrementQuantity}>-</button>
+                    <button onClick={toggleBuy} className="shopButton">
+                        X
+                    </button>
+                    <button onClick={decrementQuantity} className="shopButton">
+                        -
+                    </button>
                     <input
                         type="number"
                         onChange={handleChange}
                         value={quantity}
+                        className="shopInput"
                     />
-                    <button onClick={incrementQuantity}>+</button>
-                    <button onClick={addCartHandler}>Add To Cart</button>
+                    <button onClick={incrementQuantity} className="shopButton">
+                        +
+                    </button>
+                    <button onClick={addCartHandler} className="shopButton">
+                        Add
+                    </button>
                 </div>
             ) : (
-                <button onClick={toggleBuy}>Buy</button>
+                <button onClick={toggleBuy} className="buyButton">
+                    Buy
+                </button>
             )}
         </div>
     );

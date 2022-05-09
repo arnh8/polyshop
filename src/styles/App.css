@@ -80,6 +80,45 @@ h3 {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.shopButton {
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    max-height: 50px;
+
+    border: rgb(32, 32, 32);
+    border-radius: 5px;
+    background-color: rgb(218, 218, 218);
+    margin: 6px;
+}
+
+.buyButton {
+    font-family: "Cabin", sans-serif;
+    font-size: 16px;
+    max-height: 50px;
+
+    border: rgb(32, 32, 32);
+    border-radius: 5px;
+    background-color: rgb(218, 218, 218);
+    margin: 6px;
+}
+
+.shopInput {
+    height: 18px;
+    width: 40px;
+    text-align: center;
+}
+
+.quantityHandler {
+    display: flex;
+    flex-direction: row;
+    width: 220px;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    margin-left: 30px;
+}
+
 .itemImg {
     padding: 30px;
     padding-top: 30px;
@@ -140,9 +179,4 @@ h3 {
 
 .cartItem .cartRemove:hover {
     background-color: rgb(211, 211, 211);
-}
-
-.quantityHandler {
-    display: flex;
-    flex-direction: row;
 }
