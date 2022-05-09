@@ -8,7 +8,8 @@ import Shop from "./Shop";
 import Cart from "./Cart";
 
 function App() {
-    const [cart, setCart] = useState([{ id: 0, quantity: 1, price: 3 }]); //a cart is an array of objects: {itemID, quantity, price?}
+    //const [cart, setCart] = useState([{ id: 2, quantity: 2, price: 3 }]); //a cart is an array of objects: {itemID, quantity, price?}
+    const [cart, setCart] = useState([]);
 
     function addToCart(id, quantity, price) {
         if (quantity === 0) {
@@ -33,6 +34,8 @@ function App() {
         console.log(cart);
     }
 
+    function removeFromCart(index) {}
+
     return (
         <BrowserRouter>
             <div className="App">
@@ -43,7 +46,12 @@ function App() {
                         path="/shop"
                         element={<Shop addToCart={addToCart} />}
                     />
-                    <Route path="/cart" element={<Cart />} />
+                    <Route
+                        path="/cart"
+                        element={
+                            <Cart cart={cart} removeFromCart={removeFromCart} />
+                        }
+                    />
                 </Routes>
             </div>
         </BrowserRouter>

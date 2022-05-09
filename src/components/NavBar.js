@@ -12,12 +12,10 @@ export default function NavBar(props) {
             tempcount += props.cart[i].quantity;
         }
         setCount(tempcount);
-        console.log("this is here");
     }
 
     useEffect(() => {
         countCart();
-        console.log(props.cart);
     }, [props.cart]);
 
     return (
