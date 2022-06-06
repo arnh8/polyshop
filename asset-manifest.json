@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/polyshop/static/css/main.427cf4d2.css",
+    "main.js": "/polyshop/static/js/main.ba2756cb.js",
+    "static/media/cabin-all-400-normal.woff": "/polyshop/static/media/cabin-all-400-normal.857a809ff229761c134d.woff",
+    "static/media/cabin-latin-400-normal.woff2": "/polyshop/static/media/cabin-latin-400-normal.494cb48a046d2d2e69e0.woff2",
+    "static/media/cabin-latin-ext-400-normal.woff2": "/polyshop/static/media/cabin-latin-ext-400-normal.b2a81591c42805f600ce.woff2",
+    "static/media/cabin-vietnamese-400-normal.woff2": "/polyshop/static/media/cabin-vietnamese-400-normal.0d1d1146cff1977b630b.woff2",
+    "index.html": "/polyshop/index.html",
+    "main.427cf4d2.css.map": "/polyshop/static/css/main.427cf4d2.css.map",
+    "main.ba2756cb.js.map": "/polyshop/static/js/main.ba2756cb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.427cf4d2.css",
+    "static/js/main.ba2756cb.js"
+  ]
+}
