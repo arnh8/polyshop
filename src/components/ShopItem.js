@@ -71,7 +71,7 @@ export default function ShopItem(props) {
         <div className="shopItem">
             <img className="itemImg" src={switchImg(props.polygon.shape)} />
             <div className="itemName">{props.polygon.shape}</div>
-            <div>${props.polygon.price}</div>
+            <div className="itemPrice">${props.polygon.price}</div>
             {buying ? (
                 <div className="quantityHandler">
                     <button onClick={toggleBuy} className="shopButton">
